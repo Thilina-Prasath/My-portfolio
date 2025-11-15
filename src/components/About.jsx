@@ -68,7 +68,10 @@ const About = () => {
   };
 
   return (
-    <section className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <section
+      id="about"
+      className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"
+    >
       {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -79,17 +82,20 @@ const About = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 
       <div className="container mx-auto px-6 relative z-10">
+
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full">
             <Code2 className="w-5 h-5 text-cyan-400" />
             <span className="text-cyan-400 font-semibold">About Me</span>
           </div>
+
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
               Crafting Digital Experiences
             </span>
           </h2>
+
           <p className="text-gray-400 text-xl max-w-2xl mx-auto">
             Full-stack developer passionate about building modern web applications
           </p>
@@ -99,6 +105,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto mb-20">
           <div className="bg-gradient-to-br from-slate-800/40 via-slate-900/40 to-slate-800/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-cyan-500/20 shadow-2xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/30">
@@ -107,7 +114,8 @@ const About = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">Who I Am</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      A passionate Full-Stack Developer and Android Developer with expertise in the MERN stack. I love transforming ideas into elegant, functional web and mobile applications.
+                      A passionate Full-Stack Developer and Android Developer with expertise in the MERN stack.
+                      I love transforming ideas into elegant, functional web and mobile applications.
                     </p>
                   </div>
                 </div>
@@ -119,7 +127,8 @@ const About = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">What I Do</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      I specialize in creating responsive, user-friendly interfaces and robust backend systems that bring digital experiences to life.
+                      I specialize in creating responsive, user-friendly interfaces and robust backend systems
+                      that bring digital experiences to life.
                     </p>
                   </div>
                 </div>
@@ -147,9 +156,12 @@ const About = () => {
                     <Database className="w-5 h-5 text-purple-400" />
                     <span className="text-purple-400 font-semibold">Tools & More</span>
                   </div>
-                  <p className="text-gray-300 text-sm"> GitHub, Postman, Figma, Adobe XD, VS Code, PHP, Kotlin</p>
+                  <p className="text-gray-300 text-sm">
+                    GitHub, Postman, Figma, Adobe XD, VS Code, PHP, Kotlin
+                  </p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -169,7 +181,13 @@ const About = () => {
                 onMouseLeave={() => setHoveredSkill(null)}
                 style={{ animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both` }}
               >
-                <div className={`relative bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-xl rounded-2xl p-6 border border-cyan-500/20 transition-all duration-500 cursor-pointer ${hoveredSkill === index ? `scale-110 ${getShadowColor(skill.shadow)} shadow-2xl -translate-y-2` : ''}`}>
+                <div
+                  className={`relative bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-xl rounded-2xl p-6 border border-cyan-500/20 transition-all duration-500 cursor-pointer ${
+                    hoveredSkill === index
+                      ? `scale-110 ${getShadowColor(skill.shadow)} shadow-2xl -translate-y-2`
+                      : ''
+                  }`}
+                >
                   <div className={`absolute inset-0 bg-gradient-to-r ${skill.color} opacity-0 group-hover:opacity-20 rounded-2xl blur-xl transition-opacity duration-500`}></div>
 
                   <div className="flex flex-col items-center justify-center">
@@ -188,6 +206,7 @@ const About = () => {
               </div>
             ))}
           </div>
+
         </div>
       </div>
 
