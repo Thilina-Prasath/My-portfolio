@@ -9,7 +9,10 @@ export const projects = [
     gradient: 'from-cyan-500 to-blue-500',
     details:
       'This MERN stack application provides a complete e-commerce experience. It includes user authentication (JWT), a product catalog, a shopping cart, and a checkout process. The backend is built with Node.js and Express, connected to a MongoDB database for storing user and product information.',
-    github: 'Backend : https://github.com/Thilina-Prasath/cbc-project-backend.git' + '\n' + 'Frontend : https://github.com/Thilina-Prasath/cbc-project-frontend.git',
+    github: [
+      { label: "Backend", url: "https://github.com/Thilina-Prasath/cbc-project-backend" },
+      { label: "Frontend", url: "https://github.com/Thilina-Prasath/cbc-project-frontend" }
+    ],
     link: 'https://cbc-project-frontend-liart.vercel.app/',
     gallery: [
       '/e-log.png',

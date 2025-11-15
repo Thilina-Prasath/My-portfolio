@@ -73,16 +73,34 @@ const ProjectPage = () => {
 
           {/* GitHub Link */}
           <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-cyan-400 mb-6">GitHub Link</h2>
-            <a 
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg text-cyan-400 leading-relaxed whitespace-pre-line hover:text-cyan-300 hover:underline break-words"
-            >
-              {project.github}
-            </a>
+  <h2 className="text-3xl font-bold text-cyan-400 mb-6">GitHub Links</h2>
+
+  {Array.isArray(project.github) ? (
+    <div className="space-y-3">
+      {project.github.map((repo, index) => (
+        <a
+          key={index}
+          href={repo.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-lg text-cyan-400 hover:text-cyan-300 hover:underline break-words"
+        >
+          {repo.label}: {repo.url}
+        </a>
+      ))}
+    </div>
+  ) : (
+    <a 
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-lg text-cyan-400 hover:text-cyan-300 hover:underline break-words"
+    >
+      {project.github}
+    </a>
+  )}
           </div>
+
 
           {/* Live Demo */}
           {(project.slug === 'ecommerce-website' || project.slug === 'learning-management-system' || project.slug === 'student-mentoring-system' ) && project.link !== '#' && (
