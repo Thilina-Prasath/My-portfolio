@@ -5,8 +5,6 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
-// Import the new CSS file
-import './app.css';
 
 function App() {
   return (
