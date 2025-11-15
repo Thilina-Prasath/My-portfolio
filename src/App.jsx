@@ -1,0 +1,26 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+
+// Import the new CSS file
+import './app.css';
+
+function App() {
+  return (
+    // Use a subtle gradient for a more modern background
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-slate-800 text-white">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
