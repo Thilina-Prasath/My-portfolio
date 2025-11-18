@@ -43,7 +43,7 @@ export const projects = [
     { label: "Backend", url: "https://github.com/Thilina-Prasath/Learning-Management-System-BACKEND.git"}, 
     { label: "Frontend", url:"https://github.com/Thilina-Prasath/Learning-Management-System-FRONTEND.git" }
     ],
-    link: 'https://learning-management-system-frontend-teal.vercel.app/',
+    link: 'https://learning-management-system-frontend-flame.vercel.app/',
     gallery: [
       '/l-log.png',
       '/l-sign.png',
