@@ -39,7 +39,10 @@ export const projects = [
     link: '#', 
     gradient: 'from-cyan-500 to-blue-500',
     details: 'This MERN stack application provides a platform for educational institutions to manage courses, enroll students, and facilitate communication between instructors and learners. Features include course creation, student enrollment. The backend is built with Node.js and Express, connected to a MongoDB database and Supabase database for storing user and course information.',
-    github: 'Backend : https://github.com/Thilina-Prasath/Learning-Management-System-BACKEND.git' + '\n' + 'Frontend : https://github.com/Thilina-Prasath/Learning-Management-System-FRONTEND.git',
+    github: [
+    { label: "Backend", url: "https://github.com/Thilina-Prasath/Learning-Management-System-BACKEND.git"}, 
+    { label: "Frontend", url:"github.com/Thilina-Prasath/Learning-Management-System-FRONTEND.git" }
+    ],
     link: 'https://learning-management-system-frontend-teal.vercel.app/',
     gallery: [
       '/l-log.png',
